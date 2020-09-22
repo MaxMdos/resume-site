@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Maximiliano Martinez - Let's make stuff!</title>
+</head>
+<body>
+    <nav>
+        <a href="#about-me" class="nav-link">About Me</a>
+        <a href="#past-work" class="nav-link">Past Work</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <section class="header-container">
+        <header>
+            <h1>Front-End Developer</h1>
+            <h1>and Gamer 🎮 </h1>
+
+        </header>
+    </section>
+    <section class="about-me" id="about-me">
+        <div class="sub-section">
+            <h1>About Myself</h1>
+            <p>
+                Hi! You may call me Max. I am a Front-End Developer with a year of experience. My favorite things to do include gaming, playing guitar and streaming on Twitch. I am always open for opportunites so feel free to <a href="#contact">contact</a>
+            </p>
+        </div>
+    </section>
+    <section class="about-me" id="past-work">
+        <div class="sub-section">
+            <h1>Past Projects</h1>
+            <p>Coding what I learned</p>
+            <div id="past-projects"></div>
+        </div>
+    </section>
+    <section class="about-me">
+        <div class="sub-section">
+            <h1>Technologies I currently use</h1>
+            <div class="img-logo">
+                <img src="./images/js-logo.png" alt="js-logo">
+                <img src="./images/nodejs.png" alt="nodejs-logo" id="node-js">
+                <img src="./images/reactjs.png" alt="react-logo">
+            </div>
+            <div class="img-logo">
+                <img src="./images/html5.png" alt="html5-logo">
+                <img src="./images/css.png" alt="css-logo">
+            </div>
+        </div>
+    </section>
+    <section class="about-me" id="contact">
+        <div class="sub-section">
+            <h1>Contact</h1>
+            <a href="https://www.linkedin.com/in/maximiliano-martinez" target="blank"><img src="/images/linkedin.png" alt="linkedin logo"></a>
+        </div>
+    </section>
+    <script src="./js/github-scraper.js"></script>
+    <script>
+        window.onload = getRepos();
+    </script>
+</body>
+</html>

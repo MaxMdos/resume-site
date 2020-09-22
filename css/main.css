@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+/* Navbar Stuff */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    font-size: 200%;
+}
+
+.nav-link {
+    width: 100%;
+    padding: 2rem;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.nav-link:nth-child(2){
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.nav-link:hover {
+    background-color: cornflowerblue;
+}
+
+/* Main Container */
+.header-container {
+    display: flex;
+}
+
+.header-container header{
+    width: 55%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header-container header h1 {
+    padding: 1rem 0;
+    font-size: 4rem;
+}
+
+/* About me container */
+.about-me{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.sub-section {
+    display: block;
+    width: 50%;
+    margin: 3rem;
+}
+
+.sub-section h1{
+    padding: .5rem;
+    border-bottom: solid 1px black;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.sub-section p{
+    padding: .5rem;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+}
+
+.sub-section img {
+    height: 40%;
+    width: auto;
+    padding: .5rem;
+}
+
+/* images */
+
+.img-logo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img-logo img{
+    height: 9rem;
+    width: auto;
+    padding: 10px;
+}
+
+/* projects */
+
+.project-box{
+
+}
+
+.project-box h2 {
+    padding: .5rem;
+    text-align: center;
+}
+
+/* Mobile Stuff */
+@media screen and (max-width: 736px){
+    nav {
+        flex-direction: column;
+    }
+
+    .sub-section {
+        display: block;
+        width: 80%;
+        margin: 2rem;
+    }
+
+    .header-container header h1 {
+        padding: 1rem 0;
+        font-size: 2.5rem;
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .header-container header{
+        width: 55%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .img-logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sub-section h1 {
+        padding: .5rem;
+        border-bottom: solid 1px black;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .sub-section p {
+        padding: .5rem;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+}
